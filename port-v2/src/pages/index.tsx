@@ -20,11 +20,11 @@ export default function Home() {
             <h1 className="hidden md:block md:text-4xl font-bold">Hey there! I&apos;m on a coding adventure.</h1>
             <Portrait/>
             <Socials/>
-            <p className="text-2xl text-muted-foreground">
+            <p className="text-lg md:text-2xl text-muted-foreground">
             A software developer with a product background walks into a bar...
             </p>
         </section>
-        <div className="flex flex-col md:flex-row w-full">
+        <div className="flex flex-col md:flex-row w-full md:gap-x-16">
             <Skills />
             <Bio />
         </div>
