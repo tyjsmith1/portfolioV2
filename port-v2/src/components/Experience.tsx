@@ -22,7 +22,7 @@ export default function Experience() {
         <div className="mt-6 space-y-4">
             <h1 className="border-b border-gray-200 text-3xl font-bold text-center mb-4 pb-4">Where I&apos;ve Been</h1>
             {background.map(({name, icon: Icon, paragraph}) => (
-                <div key={name} className="flex items-center justify-center gap-20 px-44">
+                <div key={name} className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-20 md:px-44">
                     <Icon className="flex-none" size={80}/>
                     <p className="text-muted-foreground flex-1">
                         {paragraph}

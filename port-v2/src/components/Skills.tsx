@@ -22,18 +22,16 @@ export default function Skills() {
     ]
 
     return (
-        <div className="w-1/2 justify-start">
-            <div className="px-6 space-y-4">
-                <h1 className="text-3xl font-bold text-end border-b border-gray-200 mb-4 pb-4">Familiar Technologies</h1>
-                <ul className="flex flex-wrap justify-end h-full">
-                    {skills.map(({ name, icon: Icon, colorClass}) => (
-                        <li key={name} className="py-2 flex flex-col items-center m-3 mt-5 text-2xl hover:scale-105 transition-transform duration-200">
-                            <Icon className={colorClass ?? ''} size={60}/>
-                            {name}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        <div className="flex-1 space-y-4">
+            <h1 className="text-3xl font-bold text-center md:text-end border-b border-gray-200 mb-4 pb-4">Familiar Technologies</h1>
+            <ul className="flex flex-wrap justify-between md:justify-end items-center">
+                {skills.map(({ name, icon: Icon, colorClass}) => (
+                    <li key={name} className="py-2 flex flex-col items-center m-1 md:m-3 md:mt-5 text-2xl md:hover:scale-105 transition-transform duration-200">
+                        <Icon className={colorClass ?? ''} size={60}/>
+                        {name}
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

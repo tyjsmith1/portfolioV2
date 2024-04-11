@@ -14,17 +14,17 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <RootLayout>
-      <main className="p-20">
+      <main className="p-4 md:p-20">
         <Nav />
         <section className="py-10 flex flex-col gap-8 items-center text-center">
-            <h1 className="text-4xl font-bold">Hey there! I&apos;m on a coding adventure.</h1>
+            <h1 className="hidden md:block md:text-4xl font-bold">Hey there! I&apos;m on a coding adventure.</h1>
             <Portrait/>
             <Socials/>
             <p className="text-2xl text-muted-foreground">
             A software developer with a product background walks into a bar...
             </p>
         </section>
-        <div className="flex w-full">
+        <div className="flex flex-col md:flex-row w-full">
             <Skills />
             <Bio />
         </div>
