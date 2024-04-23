@@ -25,7 +25,7 @@ export default function Home() {
             <Portrait/>
             <Socials/>
         </section>
-        <div className="flex flex-col md:flex-row w-full md:gap-x-16">
+        <div className="flex flex-col md:flex-row w-full md:gap-x-16 ">
             <Skills />
             <Bio />
         </div>
