@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                     <AccordionTrigger>Read More</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionContent className="text-justify">
                         {description}
                     </AccordionContent>
                     <AccordionContent>

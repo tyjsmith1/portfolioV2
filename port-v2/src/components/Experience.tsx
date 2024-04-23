@@ -24,7 +24,7 @@ export default function Experience() {
             {background.map(({name, icon: Icon, paragraph}) => (
                 <div key={name} className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-20 md:px-44">
                     <Icon className="flex-none" size={80}/>
-                    <p className="text-muted-foreground flex-1">
+                    <p className="text-muted-foreground flex-1 text-justify">
                         {paragraph}
                     </p>
                 </div>
